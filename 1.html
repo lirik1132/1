@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>сложения двух чисел</title>
+    <script type="text/javascript">
+function addition() {
+  var a = parseFloat(document.getElementById('a').value);
+var b = parseFloat(document.getElementById('b').value);
+var c = a+b;
+  alert('Результат:  \n' + c.toFixed(1));
+}
+</script>
+	</head>
+	<body>
+    <form>
+      <label>Первое число</label> <br>
+	<input id="a" type="text" value=""><br>
+  <label>Второе число</label> <br>
+	<input id="b" type="text" value=""><br><br>
+  <input type="button" value="Сложить" onclick="addition();"><br>
+  <div id="result"></div>
+</form>
+	</body>
+</html>
